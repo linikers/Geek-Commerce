@@ -21,7 +21,7 @@ const itens = [
     price: `R$ 230`,
     type: 'quadro',
     },
-    // actions
+    
     {
     image: './assets/img/actions/animewoman.jpg',
     name: 'Anime Sakuray',
