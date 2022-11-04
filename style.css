@@ -32,3 +32,74 @@ nav ul {
     text-decoration: none;
     color: #ebfbee;
 }
+
+/*corpo*/
+.sec {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #1B1B1B;
+    padding: 12px;
+    margin: 5px;
+}
+.products {
+    display: flex;
+}
+.products2 {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 207px;
+    height: 275px;
+    background-color: #d3f9d8;
+    margin: 2vh;
+}
+.card img {
+    width: 16vw;
+    height: 15vw;
+    
+}
+.card span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #2b8a3e;
+    margin: 1vh;
+}
+.card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #37b24d;
+    margin-bottom: 3px;
+    margin-bottom: 1vh;
+}
+.card button {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    border: none;
+    background-color: #2f9e44;
+    color: #ebfbee;
+    padding: 5px;
+
+}
+
+/*rodapé*/
+footer {
+    background-color: #b2f2bb;
+    width: 100vw;
+    height: 10vh;
+    
+}
+footer span {
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+    color: #51cf66;
+    
+}
+footer span a {
+    text-decoration: none;
+    color: #2b8a3e;
+}

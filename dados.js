@@ -43,6 +43,35 @@ const itens = [
     type: 'actions',
     },
 
+    {
+    image: './assets/img/actions/funko1.png',
+    name: 'Funko Bigode',
+    price: `R$ 130`,
+    type: 'actions',
+    },
+
+    {
+    image: './assets/img/actions/funko2.png',
+    name: 'Funko Bigode',
+    price: `R$ 130`,
+    type: 'actions',
+    },
+
+    {
+    image: './assets/img/painting/baralhoCopag.png',
+    name: 'Baralho Texturizado',
+    price: `R$ 130`,
+    type: 'quadro',
+    },
+
+    {
+    image: './assets/img/painting/lkNov3.jpeg',
+    name: 'Deck Pokemon',
+    price: `R$ 530`,
+    type: 'quadro',
+    },    
+    
+
     
 ]
 console.log("Olá sou o arquivo dados")

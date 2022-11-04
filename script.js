@@ -15,5 +15,38 @@ function separateItens(itens) {
     }
     
 }
+separateItens(itens)
 
-console.log("Olá sou o arquivo script")
+function template(lista, secProd) {
+    console.log("ola")
+
+    for(let i = 0; i < lista.length; i++) {
+        //console.log(listFigures[i].type)
+    
+        const produtos = document.querySelector(secProd)
+    
+        const card = document.createElement("li")
+        card.className = "card"
+        const img = document.createElement("img")
+        img.src = lista[i].image
+        img.alt = "foto do produto"
+    
+        const span = document.createElement("span")
+        span.innerText = lista[i].name
+        const p = document.createElement("p")
+        p.innerHTML = lista[i].price
+        const button = document.createElement("button")
+        button.innerText = "Reservar"
+    
+        produtos.appendChild(card)
+        card.append(img, span, p, button)
+    
+    
+    }
+
+    
+}
+template(listFigures, ".products")
+template(listFrames, ".products2")
+
+
