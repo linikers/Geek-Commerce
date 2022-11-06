@@ -17,11 +17,43 @@ function separateItens(itens) {
 }
 separateItens(itens)
 
+
+//menu topo
+const menuTop = document.querySelector(".menu")
+
+const btnMenu1 = document.createElement("li")
+btnMenu1.className = "btn-top"
+const a1 = document.createElement("a")
+a1.innerHTML ="Lançamentos"
+
+const btnMenu2 = document.createElement("li")
+btnMenu2.className = "btn-top"
+const a2 = document.createElement("a")
+a2.innerHTML ="Pré-Vendas"
+
+const btnMenu3 = document.createElement("li")
+btnMenu3.className = "btn-top"
+const a3 = document.createElement("a")
+a3.innerHTML = "Promoções"
+
+const btnMenu4 = document.createElement("li")
+btnMenu4.className = "btn-top"
+const a4 = document.createElement("a")
+a4.innerHTML = "Contato"
+
+menuTop.append(btnMenu1, btnMenu2, btnMenu3, btnMenu4)
+btnMenu1.appendChild(a1)
+btnMenu2.appendChild(a2)
+btnMenu3.appendChild(a3)
+btnMenu4.appendChild(a4)
+
+
+
+//template produtos
 function template(lista, secProd) {
-    console.log("ola")
+    
 
     for(let i = 0; i < lista.length; i++) {
-        //console.log(listFigures[i].type)
     
         const produtos = document.querySelector(secProd)
     
