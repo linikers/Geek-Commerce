@@ -2,6 +2,7 @@
 
 body {
     background-color: #ebfbee;
+    font-family: 'Roboto', sans-serif;
 }
 nav {
     background-color: #b2f2bb;
@@ -34,6 +35,21 @@ nav ul {
 }
 
 /*corpo*/
+main {
+    width: 100vw;
+    display: flex;
+}
+
+.market {
+    width: 80vw;
+    height: 100vh;
+}
+
+.cart {
+    width: 20vw;
+    height: 100vh;
+}
+
 .sec {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -43,9 +59,12 @@ nav ul {
 }
 .products {
     display: flex;
+    flex-wrap: wrap;
+    
 }
 .products2 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -84,6 +103,37 @@ nav ul {
     padding: 5px;
 
 }
+/* carrinho de compras */
+
+.top-cart {
+    background-color: #2f9e44;
+    color: #fff;
+    width: 90%;
+    height: 6vh;
+    align-items: center;
+    border-radius: 8px;
+    margin: 1vh;
+    padding: 1vh;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-item { 
+    background-color: #b2f2bb;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+    margin: 1vh 0;
+    border-radius: 8px;
+}
+.div-soma {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    margin:1vh 0;
+    border-radius: 8px;
+    height: 6vh;
+    align-items: center;
+}
 
 /*rodapé*/
 footer {
@@ -92,7 +142,9 @@ footer {
     height: 10vh;
     
 }
-footer span {
+.rodape {
+    display: flex;
+    justify-content: center;
     padding: 20px;
     margin: 20px;
     align-items: center;
@@ -102,4 +154,5 @@ footer span {
 footer span a {
     text-decoration: none;
     color: #2b8a3e;
+    padding: 5px;
 }

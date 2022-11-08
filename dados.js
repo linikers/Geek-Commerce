@@ -74,4 +74,35 @@ const itens = [
 
     
 ]
-console.log("Olá sou o arquivo dados")
+
+let product = [
+
+    {
+        nome: "Batata Palha", 
+        preco: 24.99
+    },
+    {
+        nome: "Uva Crimson", 
+        preco: 44.99
+    },
+
+    {
+        nome:"Vinho Canção",
+        preco: 17.98
+    },
+
+    {
+        nome:"Aguá de coco",
+        preco: 8.99
+    },
+
+    {
+        nome: "Mamão",
+        preco: 9.98
+    },
+
+    {
+        nome: "Aguá Tônica",
+        preco: 17.98
+    }
+];

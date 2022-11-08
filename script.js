@@ -81,4 +81,67 @@ function template(lista, secProd) {
 template(listFigures, ".products")
 template(listFrames, ".products2")
 
+//carrinho de compra 
 
+let soma = 0
+
+//const cart = document.createElement("div");
+const list = document.createElement("ul");
+
+const cart = document.querySelector(".cart")
+//.appendChild(cart);
+cart.appendChild(list);
+
+
+const topo = document.createElement("li")
+const topo1 = document.createElement("p")
+const topo2 = document.createElement("p")
+
+list.appendChild(topo)
+topo.append(topo1, topo2)
+topo.className = "top-cart"
+topo1.innerText = "Item"
+topo2.innerText = "Valor"
+
+function somaObject (array) {
+    
+    for (let key in array) {
+        let name = array[key].nome;
+        let valor = array[key].preco;
+        
+        const productList = document.createElement("li");
+        productList.className = "cart-item"
+        const text1 = document.createElement("p");
+        const text2 = document.createElement("p");
+        
+        list.appendChild(productList);
+        productList.appendChild(text1);
+        productList.appendChild(text2);
+
+        text1.innerText = name;
+        text2.innerText = `R$ ${valor}`;
+
+        soma += valor;
+    }
+    
+      
+}
+
+somaObject(product);
+
+
+const btnFinalizar = document.createElement("button");
+const secao = document.createElement("section");
+const divSoma = document.createElement("div")
+divSoma.className = "div-soma"
+const text = document.createElement("p");
+const text2 = document.createElement("p");
+
+cart.appendChild(secao);
+secao.appendChild(divSoma)
+divSoma.append(text, text2);
+secao.appendChild(btnFinalizar);
+
+text2.innerText = "Total"
+text.innerText = soma.toFixed(2);
+btnFinalizar.innerText = "Finalizar";
