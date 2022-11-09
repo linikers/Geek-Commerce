@@ -145,3 +145,4 @@ secao.appendChild(btnFinalizar);
 text2.innerText = "Total"
 text.innerText = soma.toFixed(2);
 btnFinalizar.innerText = "Finalizar";
+btnFinalizar.className = "cart-btn"

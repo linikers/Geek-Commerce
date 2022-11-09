@@ -101,10 +101,15 @@ main {
     background-color: #2f9e44;
     color: #ebfbee;
     padding: 5px;
-
+    border: none;
 }
 /* carrinho de compras */
 
+.cart {
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+}
 .top-cart {
     background-color: #2f9e44;
     color: #fff;
@@ -122,21 +127,31 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 1vh;
-    margin: 1vh 0;
+    margin: 1vh 1vw;
     border-radius: 8px;
 }
 .div-soma {
     display: flex;
     justify-content: space-between;
-    background-color: #eeeeee;
-    margin:1vh 0;
+    background-color: #d3f9d8;
+    padding: 1vh;
+    margin:1vh 1vw;
     border-radius: 8px;
     height: 6vh;
     align-items: center;
 }
+.cart-btn {
+    background-color: #37b24d;
+    color: #fff;
+    padding: 1vh 5vw;
+    margin: 20px;
+    border: none;
+    border-radius: 12px;
+}
 
 /*rodapé*/
 footer {
+    position: absolute;
     background-color: #b2f2bb;
     width: 100vw;
     height: 10vh;
